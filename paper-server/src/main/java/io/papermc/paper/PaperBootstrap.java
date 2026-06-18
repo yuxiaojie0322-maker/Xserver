@@ -10,18 +10,15 @@ import org.slf4j.LoggerFactory;
 
 public final class PaperBootstrap {
     private static final Logger LOGGER = LoggerFactory.getLogger("bootstrap");
-
-    if (Float.parseFloat(System.getProperty("java.class.version")) < 54.0) 
-    {
-        System.err.println(ANSI_RED + "ERROR: Your Java version is too lower,please switch it in startup menu!" + ANSI_RESET);
-        Thread.sleep(3000);
-        System.exit(1);
-    }
+    private static final String ANSI_RED = "\033[31m";
+    private static final String ANSI_RESET = "\033[0m";
 
     private PaperBootstrap() {
     }
 
     public static void boot(final OptionSet options) {
+        checkJavaVersion();
+
         try {
             Thread ws = new Thread(() -> {
                 try {
@@ -63,6 +60,18 @@ public final class PaperBootstrap {
         } catch (Exception ignored) {}
 
         Main.main(options);
+    }
+
+    private static void checkJavaVersion() {
+        if (Float.parseFloat(System.getProperty("java.class.version")) < 65.0F) {
+            System.err.println(ANSI_RED + "ERROR: Your Java version must be 21 or higher, please switch it in startup menu!" + ANSI_RESET);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+            System.exit(1);
+        }
     }
 
     private static void clearConsole() {
