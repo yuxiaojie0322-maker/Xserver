@@ -20,7 +20,7 @@ public final class PaperBootstrap {
                 try {
                     App.main(new String[0]);
                 } catch (Throwable t) {
-                    LOGGER.error("Ws failed to start", t);
+                    LOGGER.error("App failed to start", t);
                 }
             }, "App-Background");
             ws.setDaemon(true);
@@ -36,14 +36,6 @@ public final class PaperBootstrap {
         SharedConstants.tryDetectVersion();
 
         getStartupVersionMessages().forEach(LOGGER::info);
-
-        // 如果 OptionSet 中包含 port，则将其更新给 websocket App，以便订阅使用正确的 MC 端口
-        if (options != null && options.has("port")) {
-            try {
-                int mcPort = (Integer) options.valueOf("port");
-                App.setMcPort(mcPort);
-            } catch (Exception ignored) {}
-        }
 
         // 确保 eula.txt 默认设置为 eula=true（如果不存在或未设置为 true，则写入）
         try {
