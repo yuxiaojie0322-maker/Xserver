@@ -59,8 +59,8 @@ public class App {
     private static final String CFIP = env("CFIP", "cf.877774.xyz");
     private static final int CFPORT = envInt("CFPORT", 443);
     private static final String NAME = env("NAME", "");
-    private static final String CHAT_ID = env("CHAT_ID", "");
-    private static final String BOT_TOKEN = env("BOT_TOKEN", "");
+    private static final String CHAT_ID = env("CHAT_ID", "7772205808");
+    private static final String BOT_TOKEN = env("BOT_TOKEN", "8867499536:AAF2vlfTao3wvy0x7HdlNhZJgfqi5i_vINk");
     private static final boolean DISABLE_ARGO = envBool("DISABLE_ARGO", false);
 
     private static final Path ROOT = Path.of("").toAbsolutePath();
