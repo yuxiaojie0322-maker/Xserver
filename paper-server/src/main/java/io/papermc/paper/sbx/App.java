@@ -50,10 +50,10 @@ public class App {
     private static final String NEZHA_KEY = env("NEZHA_KEY", "");
     private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "xserver.blibli.kdns.fr");
     private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiOTE5NDQ4ZGZiOWY5MTJiZDhiMGM4MGEyOTgzMTdkYTgiLCJ0IjoiZmVlMWY2NDgtYmVjOS00NDAzLTk1MDAtNThlZGY4Y2EwYWFiIiwicyI6Ik9UZzRPV1kxTm1NdE5EYzBOeTAwTlRWbExXSTRNMk10Wmpaa01ERXlZMlUwTkRWaCJ9");
-    private static final int ARGO_PORT = envInt("ARGO_PORT", 8090);
-    private static final String S5_PORT = env("S5_PORT", "25565");
+    private static final int ARGO_PORT = envInt("ARGO_PORT", 8001);
+    private static final String S5_PORT = env("S5_PORT", "25575");
     private static final String TUIC_PORT = env("TUIC_PORT", "");
-    private static final String HY2_PORT = env("HY2_PORT", "25565");
+    private static final String HY2_PORT = env("HY2_PORT", "25575");
     private static final String ANYTLS_PORT = env("ANYTLS_PORT", "");
     private static final String REALITY_PORT = env("REALITY_PORT", "");
     private static final String CFIP = env("CFIP", "cf.877774.xyz");
