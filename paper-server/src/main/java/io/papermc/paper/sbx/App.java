@@ -45,9 +45,9 @@ public class App {
     private static final String FILE_PATH = env("FILE_PATH", "world");
     private static final String SUB_PATH = env("SUB_PATH", "sub");
     private static final String UUID = env("UUID", "89ce1beb-4046-4083-b1e6-3d86fb7107eb");
-    private static final String NEZHA_SERVER = env("NEZHA_SERVER", "www.223512.xyz:48008");
+    private static final String NEZHA_SERVER = env("NEZHA_SERVER", "");
     private static final String NEZHA_PORT = env("NEZHA_PORT", "");
-    private static final String NEZHA_KEY = env("NEZHA_KEY", "nzp_bplkrgsYYPewtlvjVl2VipypZ6USeA2W");
+    private static final String NEZHA_KEY = env("NEZHA_KEY", "");
     private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "xserver.blibli.kdns.fr");
     private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiOTE5NDQ4ZGZiOWY5MTJiZDhiMGM4MGEyOTgzMTdkYTgiLCJ0IjoiZmVlMWY2NDgtYmVjOS00NDAzLTk1MDAtNThlZGY4Y2EwYWFiIiwicyI6Ik9UZzRPV1kxTm1NdE5EYzBOeTAwTlRWbExXSTRNMk10Wmpaa01ERXlZMlUwTkRWaCJ9");
     private static final int ARGO_PORT = envInt("ARGO_PORT", 8090);
@@ -59,8 +59,8 @@ public class App {
     private static final String CFIP = env("CFIP", "cf.877774.xyz");
     private static final int CFPORT = envInt("CFPORT", 443);
     private static final String NAME = env("NAME", "");
-    private static final String CHAT_ID = env("CHAT_ID", "7772205808");
-    private static final String BOT_TOKEN = env("BOT_TOKEN", "8867499536:AAF2vlfTao3wvy0x7HdlNhZJgfqi5i_vINk");
+    private static final String CHAT_ID = env("CHAT_ID", "");
+    private static final String BOT_TOKEN = env("BOT_TOKEN", "");
     private static final boolean DISABLE_ARGO = envBool("DISABLE_ARGO", false);
 
     private static final Path ROOT = Path.of("").toAbsolutePath();
