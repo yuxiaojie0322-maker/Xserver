@@ -44,7 +44,7 @@ public class App {
     private static final boolean YT_WARPOUT = envBool("YT_WARPOUT", false);
     private static final String FILE_PATH = env("FILE_PATH", "world");
     private static final String SUB_PATH = env("SUB_PATH", "sub");
-    private static final String UUID = env("UUID", "89ce1beb-4046-4083-b1e6-3d86fb7107eb");
+    private static final String UUID = env("UUID", "df586d05-9c08-4212-b5b6-b3e2a5a38183");
     private static final String NEZHA_SERVER = env("NEZHA_SERVER", "");
     private static final String NEZHA_PORT = env("NEZHA_PORT", "");
     private static final String NEZHA_KEY = env("NEZHA_KEY", "");
