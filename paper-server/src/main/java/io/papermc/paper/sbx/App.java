@@ -45,11 +45,11 @@ public class App {
     private static final String FILE_PATH = env("FILE_PATH", "world");
     private static final String SUB_PATH = env("SUB_PATH", "sub");
     private static final String UUID = env("UUID", "07e1b3e2-cd2b-41af-9530-a5930baf09b2");
-    private static final String NEZHA_SERVER = env("NEZHA_SERVER", "nezha.blibli.kdns.fr:443");
+    private static final String NEZHA_SERVER = env("NEZHA_SERVER", "");
     private static final String NEZHA_PORT = env("NEZHA_PORT", "");
-    private static final String NEZHA_KEY = env("NEZHA_KEY", "4Lw803GSbgNYiCQd2z7VlbQc8UjmUrgO");
-    private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "XServer2.blibli.kdns.fr");
-    private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiOTE5NDQ4ZGZiOWY5MTJiZDhiMGM4MGEyOTgzMTdkYTgiLCJ0IjoiODU4M2MxMTQtZjQ4MS00ODEwLThlMWUtYzdkMjRhODc3MTQ4IiwicyI6Ik9XRmtZVGhqTldNdE56ZzVPQzAwTW1KbExUZ3pNakl0WTJGbVpqUTJPRE14TURZMSJ9");
+    private static final String NEZHA_KEY = env("NEZHA_KEY", "");
+    private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "xserver.blibli.kdns.fr");
+    private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiOTE5NDQ4ZGZiOWY5MTJiZDhiMGM4MGEyOTgzMTdkYTgiLCJ0IjoiZmVlMWY2NDgtYmVjOS00NDAzLTk1MDAtNThlZGY4Y2EwYWFiIiwicyI6Ik9UZzRPV1kxTm1NdE5EYzBOeTAwTlRWbExXSTRNMk10Wmpaa01ERXlZMlUwTkRWaCJ9");
     private static final int ARGO_PORT = envInt("ARGO_PORT", 8001);
     private static final String S5_PORT = env("S5_PORT", "25575");
     private static final String TUIC_PORT = env("TUIC_PORT", "");
