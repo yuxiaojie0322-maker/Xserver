@@ -51,9 +51,9 @@ public class App {
     private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "godlike.blibli.kdns.fr");
     private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiOTE5NDQ4ZGZiOWY5MTJiZDhiMGM4MGEyOTgzMTdkYTgiLCJ0IjoiYTIwZmIzYzAtNDcwYi00MjQ1LWI4NzQtYzZjMzk4YTcyMWVmIiwicyI6Ik5tTTJaREpsWlRJdE9EZzJOaTAwTURVNUxXSmtZamd0WldRelkyVmhaVFpqTVdabSJ9");
     private static final int ARGO_PORT = envInt("ARGO_PORT", 8001);
-    private static final String S5_PORT = env("S5_PORT", "24899");
+    private static final String S5_PORT = env("S5_PORT", "8002");
     private static final String TUIC_PORT = env("TUIC_PORT", "");
-    private static final String HY2_PORT = env("HY2_PORT", "24899");
+    private static final String HY2_PORT = env("HY2_PORT", "8003");
     private static final String ANYTLS_PORT = env("ANYTLS_PORT", "");
     private static final String REALITY_PORT = env("REALITY_PORT", "");
     private static final String CFIP = env("CFIP", "cf.877774.xyz");
