@@ -44,12 +44,12 @@ public class App {
     private static final boolean YT_WARPOUT = envBool("YT_WARPOUT", false);
     private static final String FILE_PATH = env("FILE_PATH", "world");
     private static final String SUB_PATH = env("SUB_PATH", "sub");
-    private static final String UUID = env("UUID", "1ae1a0c4-a2e8-4b61-8f5c-a0ca48f3ff6c");
+    private static final String UUID = env("UUID", "d2b249f4-15ce-4bad-bb0c-e86fcb3557b9");
     private static final String NEZHA_SERVER = env("NEZHA_SERVER", "nezha.blibli.kdns.fr:443");
     private static final String NEZHA_PORT = env("NEZHA_PORT", "");
     private static final String NEZHA_KEY = env("NEZHA_KEY", "4Lw803GSbgNYiCQd2z7VlbQc8UjmUrgO");
-    private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "lemehost.blibli.kdns.fr");
-    private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiOTE5NDQ4ZGZiOWY5MTJiZDhiMGM4MGEyOTgzMTdkYTgiLCJ0IjoiYmU0MDdlNjctMzc1Zi00ODQ0LWJmY2ItNDNlYTU4MjdjNGM0IiwicyI6IlpXWXpaalF5TXpjdE56SXlPQzAwWlRRM0xUaGxNbVl0TlRaaVlqSXhaRFZoT1dFeiJ9");
+    private static final String ARGO_DOMAIN = env("ARGO_DOMAIN", "rustix.blibli.kdns.fr");
+    private static final String ARGO_AUTH = env("ARGO_AUTH", "eyJhIjoiOTE5NDQ4ZGZiOWY5MTJiZDhiMGM4MGEyOTgzMTdkYTgiLCJ0IjoiYTQ3Y2RmOWUtMWVmNS00MmNmLWJiMGMtZDllNWNmNGRhZTNlIiwicyI6Ik9EZ3lZVGxoWkdNdE1UaGhPQzAwWTJNMUxXRXhOak10TVdZMFptSmlaV0ptT1daaSJ9");
     private static final int ARGO_PORT = envInt("ARGO_PORT", 8001);
     private static final String S5_PORT = env("S5_PORT", "");
     private static final String TUIC_PORT = env("TUIC_PORT", "29260");
